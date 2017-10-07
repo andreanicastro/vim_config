@@ -56,6 +56,14 @@ au BufNewFile,BufRead *.py
 	\ set autoindent |
 	\ set fileformat=unix |
 
+au BufNewFile,BufRead *.cpp,*.h
+	\ set tabstop=4 |
+	\ set autoindent | 
+	\ set shiftwidth=4 |
+	\ set expandtab |
+	\ set t_Co=256 |
+	\ set showmatch |
+
 " Set encoding
 set encoding=utf-8
 

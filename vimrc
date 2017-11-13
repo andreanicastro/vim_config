@@ -57,7 +57,7 @@ au BufNewFile,BufRead *.py
 	\ set autoindent |
 	\ set fileformat=unix |
 
-au BufNewFile,BufRead *.cpp,*.h
+au BufNewFile,BufRead *.cpp,*.h,*.c
 	\ set tabstop=4 |
 	\ set autoindent | 
 	\ set shiftwidth=4 |

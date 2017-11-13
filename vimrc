@@ -15,6 +15,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-surround'
+Plugin 'Yggdroot/indentLine'
 " Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'nvie/vim-flake8'
 Plugin 'jmcantrell/vim-virtualenv'
@@ -46,6 +47,10 @@ nnoremap <space> za
 
 " folded docstring
 let g:SimpylFold_docstring_preview=1
+
+" Indent line configuration
+let g:intentLine_char = '|'
+let g:indentLine_setColors = 0
 
 " Set up indentation
 au BufNewFile,BufRead *.py

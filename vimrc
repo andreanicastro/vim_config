@@ -12,8 +12,8 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'jistr/vim-nerdtree-tabs'
 " Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'nvie/vim-flake8'
 Plugin 'jmcantrell/vim-virtualenv'
@@ -75,14 +75,9 @@ let python_highlight_all=1
 syntax on
 
 " select the theme based on the modality
-if has('gui_running')
-	set background=dark
-	colorscheme solarized
-	call togglebg#map("<F5>")
-else
-	colorscheme zenburn
-endif
-
+set background=dark
+colorscheme solarized
+call togglebg#map("<F5>")
 "Enable line numbering
 set nu 
 
@@ -94,7 +89,7 @@ set nu
 set clipboard=unnamed 
 
 " Activate nerdtree
-autocmd vimenter * NERDTree 
+" autocmd vimenter * NERDTree 
 
 " ESC as jj
 imap jj <ESC>

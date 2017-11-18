@@ -46,6 +46,10 @@ nnoremap <space> za
 " folded docstring
 let g:SimpylFold_docstring_preview=1
 
+" Indent line configuration
+let g:intentLine_char = '|'
+let g:indentLine_setColors = 0
+
 " Set up indentation
 au BufNewFile,BufRead *.py
 	\ set tabstop=4 | 

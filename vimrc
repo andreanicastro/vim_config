@@ -87,7 +87,8 @@ colorscheme solarized
 call togglebg#map("<F5>")
 "Enable line numbering
 set nu 
-
+set statusline+=%F
+set laststatus=2
 
 " Nerdtree ignore files
 " let NERDTreeIgnore=['\.pyc$', '\~$'] 

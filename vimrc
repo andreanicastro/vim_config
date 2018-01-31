@@ -60,14 +60,16 @@ au BufNewFile,BufRead *.py
 	\ set expandtab |
 	\ set autoindent |
 	\ set fileformat=unix |
+let g:ycm_python_binary_path = 'python'
 
-au BufNewFile,BufRead *.cpp,*.h,*.c
+au BufNewFile,BufRead *.cpp,*.h,*.c,*.hpp
 	\ set tabstop=4 |
 	\ set autoindent | 
 	\ set shiftwidth=4 |
 	\ set expandtab |
 	\ set t_Co=256 |
 	\ set showmatch |
+	\ set colorcolumn=80  
 
 " Set encoding
 set encoding=utf-8

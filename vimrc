@@ -51,6 +51,8 @@ let g:SimpylFold_docstring_preview=1
 let g:intentLine_char = '|'
 let g:indentLine_setColors = 0
 
+let python_highlight_all=1
+syntax on
 " Set up indentation
 au BufNewFile,BufRead *.py
 	\ set tabstop=4 | 
@@ -60,12 +62,13 @@ au BufNewFile,BufRead *.py
 	\ set expandtab |
 	\ set autoindent |
 	\ set fileformat=unix |
+	\ set colorcolumn=80 
 let g:ycm_python_binary_path = 'python'
 
 au BufNewFile,BufRead *.cpp,*.h,*.c,*.hpp
-	\ set tabstop=4 |
+	\ set tabstop=2 |
 	\ set autoindent | 
-	\ set shiftwidth=4 |
+	\ set shiftwidth=2 |
 	\ set expandtab |
 	\ set t_Co=256 |
 	\ set showmatch |
@@ -78,8 +81,6 @@ set encoding=utf-8
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinition<CR>
 
-let python_highlight_all=1
-syntax on
 
 " select the theme based on the modality
 set background=dark
